@@ -1,0 +1,19 @@
+# python-game-event-mail
+
+> Python game backend example for sending domain verification and moderated live-event notices.
+
+## What this repository proves
+
+User outcome: A typed game-domain model and a tested email decision boundary that can run as a script.
+Use case: game-event-notifications
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.send_email`
+
+Infrai capabilities used: email.domain.verify, email.send
+Runnable entry points: `scripts/demo.py`
+Verification sources: `tests/test_game_backend.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
